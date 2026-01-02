@@ -1,0 +1,148 @@
+:root{
+    /* --primary-color:#575a5e; */
+    /* --primary-color-dark:#08b2e3; */
+    --secondary-color :#662c91;
+    --text-dark:#08090a;
+    --text-light:#efe9f4;
+    --background:#7d70ba;
+    --max-width:1200px;
+}
+
+.skills{
+    width: 100%;
+    height: 100%;
+    background-color: var(--background);
+    margin-top: 25px;
+    /* margin-bottom: 25px; */
+    padding-bottom: 50px;
+}
+
+
+.container {
+    position: relative;
+    max-width: 1450px;
+    width: 95%;
+    background: #ececec;
+    /* margin: 10px 15px; */
+    /* padding: 10px 20px; */
+    border-radius: 7px;
+    margin-bottom: 0px;
+    padding-bottom:30px ;
+  }
+  
+  .container .skill-box {
+    width: 100%;
+    margin: 25px 0;
+    display:grid;
+  }
+  
+  .skill-box .title {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .skill-box .skill-bar {
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: rgba(0,0,0,0.1);
+  }
+  
+  .skill-bar .skill-per {
+    position: relative;
+    display: grid;
+    height: 100%;
+    width: 90%;
+    border-radius: 6px;
+    background: var(--secondary-color);
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+  }
+  
+  .skill-per.html {
+     /*progreso de las diferentes lenguajes*/
+    width: 99%;
+    animation-delay: 0.5s;
+  }
+  
+  .skill-per.css {
+           /*progreso de las diferentes lenguajes*/
+    width: 98%;
+    animation-delay: 0.5s;
+  }
+  
+  .skill-per.javascript {
+        /*progreso de las diferentes lenguajes*/
+    width: 90%;
+    animation-delay: 0.5s;
+  }
+  
+  .skill-per.bootstrap {
+        
+    width: 95%;
+    animation-delay: 0.5s;
+  }
+  
+  .skill-per.reactjs {
+        
+    width: 75%;
+    animation-delay: 0.5s;
+  }
+
+  .skill-per.python {
+        
+    width: 75%;
+    animation-delay: 0.5s;
+  }
+
+  .skill-per.django {
+        
+    width: 86%;
+    animation-delay: 0.5s;
+  }
+
+  .skill-per.mysql {
+        
+    width: 75%;
+    animation-delay: 0.5s;
+  }
+
+  @keyframes progress {
+    0% {
+      width: 0;
+      opacity: 1;
+      
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .skill-per .tooltip {
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-weight: 500;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background:var(--secondary-color);
+    z-index: 1;
+  }
+  
+  .tooltip::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+    background-color: #4070f4;
+    transform: translateX(-50%) rotate(45deg);
+  }
