@@ -17,6 +17,14 @@
     padding-bottom: 50px;
 }
 
+.abt-text{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--text-light);
+  }
+
 
 .container {
     position: relative;

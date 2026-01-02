@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navbar.css'
-import main1 from '../../assets/images/rak.jpg'
+import main1 from '../../assets/images/rakesh_profile_img.jpg'
 import main3 from '../../assets/images/Rakesh R.pdf'
 
 // import 'bootstrap/dist/css/bootstrap.min.css'
